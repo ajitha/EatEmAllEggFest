@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ajitha.v3game"
+    android:versionCode="1"
+    android:versionName="1.1" 
+    android:installLocation="auto"
+    
+    
+    >
+	
+    
+    
+    <uses-sdk android:minSdkVersion="8" 
+        android:targetSdkVersion="10"
+        />
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name="com.ajitha.v3game.GlobalState"
+        android:icon="@drawable/ic_launcher"
+        android:label="Eat'em All" 
+        
+        
+        >
+        <activity
+            
+             android:name="com.ajitha.v3game.MainMenu"
+             android:theme="@style/Theme.NoBackground"
+             android:configChanges="keyboardHidden|orientation|locale|keyboard"
+             android:screenOrientation="portrait"
+             
+            android:label="Eat'em All" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.ajitha.v3game.props"
+            android:configChanges="keyboardHidden|orientation|locale|keyboard"
+            android:screenOrientation="portrait"
+            ></activity>
+        
+        <activity 
+           android:name="com.ajitha.v3game.Level"
+             android:theme="@style/Theme.NoBackground"
+             android:configChanges="keyboardHidden|orientation|locale|keyboard"
+             android:screenOrientation="portrait"
+            ></activity>
+        
+        <activity 
+           android:name="com.ajitha.v3game.Level2"
+            android:configChanges="keyboardHidden|orientation|locale|keyboard"
+            android:screenOrientation="portrait"
+            ></activity>
+        
+         <activity 
+            android:name="com.ajitha.v3game.MainMenu3"
+            android:configChanges="keyboardHidden|orientation|locale|keyboard"
+            android:screenOrientation="portrait"
+            ></activity>
+         
+         <activity 
+            android:name="com.ajitha.v3game.Test"
+            android:configChanges="keyboardHidden|orientation|locale|keyboard"
+            android:screenOrientation="portrait"
+            ></activity>
+          <activity 
+            android:name="com.ajitha.v3game.MainMenu2"
+             android:theme="@style/Theme.NoBackground"
+             android:configChanges="keyboardHidden|orientation|locale|keyboard"
+             android:screenOrientation="portrait"
+            ></activity>
+          
+          <activity 
+            android:name="com.ajitha.v3game.V3Activity"
+             android:theme="@style/Theme.NoBackground"
+             android:configChanges="keyboardHidden|orientation|locale|keyboard"
+             android:screenOrientation="portrait"
+            ></activity>
+          
+          <activity 
+            android:name="com.ajitha.v3game.Story"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait"
+            ></activity>
+        
+    </application>
+
+</manifest>
